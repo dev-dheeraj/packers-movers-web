@@ -1,340 +1,407 @@
 <!DOCTYPE html>
-<html>
-  <title>W3.CSS Template</title>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Raleway"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Raleway", Arial, Helvetica, sans-serif;
-    }
-    .myLink {
-      display: none;
-    }
-  </style>
-  <body class="w3-light-grey">
-    <!-- Navigation Bar -->
-    <div class="w3-bar w3-white w3-border-bottom w3-xlarge">
-      <a href="#" class="w3-bar-item w3-button w3-text-red w3-hover-red"
-        ><b><i class="fa fa-map-marker w3-margin-right"></i>Logo</b></a
-      >
-      <a
-        href="#"
-        class="w3-bar-item w3-button w3-right w3-hover-red w3-text-grey"
-        ><i class="fa fa-search"></i
-      ></a>
+<html lang="en">
+  <head>
+    <title>CMB</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- added external css -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link href="./assets/index.css" rel="stylesheet" type="text/css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- add external js -->
+    <script src="./assets/index.js"></script>
+  </head>
+
+  <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">CMB</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#services">SERVICES</a></li>
+            <li><a href="#portfolio">AREA WE COVER</a></li>
+            <li><a href="#pricing">PRICING</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron text-center">
+      <h1>City-Movers-Bhopal</h1>
+      <p>Title for City-Movers-Bhopal</p>
     </div>
 
-    <!-- Header -->
-    <header
-      class="w3-display-container w3-content w3-hide-small"
-      style="max-width: 1500px"
-    >
-      <img
-        class="w3-image"
-        src="https://www.w3schools.com/w3images/london2.jpg"
-        alt="London"
-        width="1500"
-        height="700"
-      />
-      <div class="w3-display-middle" style="width: 65%">
-        <div class="w3-bar w3-black">
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="openLink(event, 'Flight');"
-          >
-            <i class="fa fa-plane w3-margin-right"></i>Flight
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="openLink(event, 'Hotel');"
-          >
-            <i class="fa fa-bed w3-margin-right"></i>Hotel
-          </button>
-          <button
-            class="w3-bar-item w3-button tablink"
-            onclick="openLink(event, 'Car');"
-          >
-            <i class="fa fa-car w3-margin-right"></i>Rental
-          </button>
+    <div class="container-fluid bg-grey">
+      <div class="row">
+        <div class="col-sm-4">
+          <span class="glyphicon glyphicon-globe logo slideanim"></span>
         </div>
-
-        <!-- Tabs -->
-        <div id="Flight" class="w3-container w3-white w3-padding-16 myLink">
-          <h3>Travel the world with us</h3>
-          <div class="w3-row-padding" style="margin: 0 -16px">
-            <div class="w3-half">
-              <label>From</label>
-              <input
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Departing from"
-              />
-            </div>
-            <div class="w3-half">
-              <label>To</label>
-              <input
-                class="w3-input w3-border"
-                type="text"
-                placeholder="Arriving at"
-              />
-            </div>
-          </div>
+        <div class="col-sm-8">
+          <h2>Our Values</h2>
+          <br />
+          <h4>
+            <strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </h4>
+          <br />
           <p>
-            <button class="w3-button w3-dark-grey">
-              Search and find dates
-            </button>
-          </p>
-        </div>
-
-        <div id="Hotel" class="w3-container w3-white w3-padding-16 myLink">
-          <h3>Find the best hotels</h3>
-          <p>Book a hotel with us and get the best fares and promotions.</p>
-          <p>We know hotels - we know comfort.</p>
-          <p><button class="w3-button w3-dark-grey">Search Hotels</button></p>
-        </div>
-
-        <div id="Car" class="w3-container w3-white w3-padding-16 myLink">
-          <h3>Best car rental in the world!</h3>
-          <p>
-            <span class="w3-tag w3-deep-orange">DISCOUNT!</span> Special offer
-            if you book today: 25% off anywhere in the world with
-            CarServiceRentalRUs
-          </p>
-          <input
-            class="w3-input w3-border"
-            type="text"
-            placeholder="Pick-up point"
-          />
-          <p>
-            <button class="w3-button w3-dark-grey">Search Availability</button>
+            <strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+            nisi ut aliquip ex ea commodo consequat.
           </p>
         </div>
       </div>
-    </header>
+    </div>
 
-    <!-- Page content -->
-    <div class="w3-content" style="max-width: 1100px">
-      <!-- Good offers -->
-      <div class="w3-container w3-margin-top">
-        <h3>Good Offers Right Now</h3>
-        <h6>Up to <strong>50%</strong> discount.</h6>
+    <!-- Container (Services Section) -->
+    <div id="services" class="container-fluid text-center">
+      <h2>SERVICES</h2>
+      <h4>What we offer</h4>
+      <br />
+      <button type="button" class="collapsible">HOME RELOCATION</button>
+      <div class="content">
+        <p>
+          There a number of reasons when people need to relocate their home.
+          Obviously, they would want to move their household belongings safely.
+          Hiring home relocation services would ensure easier and...
+        </p>
       </div>
-      <div class="w3-row-padding w3-text-white w3-large">
-        <div class="w3-half w3-margin-bottom">
-          <div class="w3-display-container">
+      <button type="button" class="collapsible">OFFICE RELOCATION</button>
+      <div class="content">
+        <p>
+          You may need to do office relocation for various reasons. One of the
+          common reasons for growing business is need for space to expand and
+          better infrastructure facilities. You may be planning to shift...
+        </p>
+      </div>
+      <button type="button" class="collapsible">CAR CARRIERS</button>
+      <div class="content">
+        <p>
+          Transporting your vehicle to new region is not a simple task, thus you
+          need professionals assistance in terms of relocating your vehicle form
+          one city or country to another. You car is an...
+        </p>
+      </div>
+    </div>
+
+    <!-- about section -->
+    <div id="about" class="abt-section">
+      <div class="about-section container-fluid">
+        <h1>About <b>CMB</b> Team</h1>
+        <p>Title about Who we are</p>
+        <p>Any thing here ypou want to show on about section or sub-title</p>
+      </div>
+
+      <h2 style="text-align: center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
             <img
-              src="https://www.w3schools.com/w3images/cinqueterre.jpg"
-              alt="Cinque Terre"
+              src="https://www.w3schools.com/w3images/team1.jpg"
+              alt="Jane"
               style="width: 100%"
             />
-            <span class="w3-display-bottomleft w3-padding">Cinque Terre</span>
-          </div>
-        </div>
-        <div class="w3-half">
-          <div class="w3-row-padding" style="margin: 0 -16px">
-            <div class="w3-half w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="https://www.w3schools.com/w3images/newyork2.jpg"
-                  alt="New York"
-                  style="width: 100%"
-                />
-                <span class="w3-display-bottomleft w3-padding">New York</span>
-              </div>
-            </div>
-            <div class="w3-half w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="https://www.w3schools.com/w3images/sanfran.jpg"
-                  alt="San Francisco"
-                  style="width: 100%"
-                />
-                <span class="w3-display-bottomleft w3-padding"
-                  >San Francisco</span
-                >
-              </div>
-            </div>
-          </div>
-          <div class="w3-row-padding" style="margin: 0 -16px">
-            <div class="w3-half w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="https://www.w3schools.com/w3images/pisa.jpg"
-                  alt="Pisa"
-                  style="width: 100%"
-                />
-                <span class="w3-display-bottomleft w3-padding">Pisa</span>
-              </div>
-            </div>
-            <div class="w3-half w3-margin-bottom">
-              <div class="w3-display-container">
-                <img
-                  src="https://www.w3schools.com/w3images/paris.jpg"
-                  alt="Paris"
-                  style="width: 100%"
-                />
-                <span class="w3-display-bottomleft w3-padding">Paris</span>
-              </div>
+            <div class="container">
+              <h2>Rakesh</h2>
+              <p class="title">CEO & Founder</p>
+              <p>work that Rakesh DO</p>
+              <p>rakesh@example.com</p>
+              <!-- <p><button class="button">Contact</button></p> -->
             </div>
           </div>
         </div>
-      </div>
-
-      <!-- Explore Nature -->
-      <div class="w3-container">
-        <h3>Explore Nature</h3>
-        <p>Travel with us and see nature at its finest.</p>
-      </div>
-      <div class="w3-row-padding">
-        <div class="w3-half w3-margin-bottom">
-          <img
-            src="https://www.w3schools.com/w3images/ocean2.jpg"
-            alt="Norway"
-            style="width: 100%"
-          />
-          <div class="w3-container w3-white">
-            <h3>West Coast, Norway</h3>
-            <p class="w3-opacity">Roundtrip from $79</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-          </div>
-        </div>
-        <div class="w3-half w3-margin-bottom">
-          <img
-            src="https://www.w3schools.com/w3images/mountains2.jpg"
-            alt="Austria"
-            style="width: 100%"
-          />
-          <div class="w3-container w3-white">
-            <h3>Mountains, Austria</h3>
-            <p class="w3-opacity">One-way from $39</p>
-            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-            <button class="w3-button w3-margin-bottom">Buy Tickets</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Newsletter -->
-      <div class="w3-container">
-        <div
-          class="w3-panel w3-padding-16 w3-black w3-opacity w3-card w3-hover-opacity-off"
-        >
-          <h2>Get the best offers first!</h2>
-          <p>Join our newsletter.</p>
-          <label>E-mail</label>
-          <input
-            class="w3-input w3-border"
-            type="text"
-            placeholder="Your Email address"
-          />
-          <button type="button" class="w3-button w3-red w3-margin-top">
-            Subscribe
-          </button>
-        </div>
-      </div>
-
-      <!-- Contact -->
-      <div class="w3-container">
-        <h2>Contact</h2>
-        <p>Let us book your next trip!</p>
-        <i class="fa fa-map-marker" style="width: 30px"></i> Chicago, US<br />
-        <i class="fa fa-phone" style="width: 30px"></i> Phone: +00 151515<br />
-        <i class="fa fa-envelope" style="width: 30px"> </i> Email:
-        mail@mail.com<br />
-        <form action="/action_page.php" target="_blank">
-          <p>
-            <input
-              class="w3-input w3-padding-16 w3-border"
-              type="text"
-              placeholder="Name"
-              required
-              name="Name"
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://www.w3schools.com/w3images/team2.jpg"
+              alt="Mike"
+              style="width: 100%"
             />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16 w3-border"
-              type="text"
-              placeholder="Email"
-              required
-              name="Email"
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>more about him....</p>
+              <p>mike@example.com</p>
+              <!-- <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img
+              src="https://www.w3schools.com/w3images/team2.jpg"
+              alt="Mike"
+              style="width: 100%"
             />
-          </p>
-          <p>
-            <input
-              class="w3-input w3-padding-16 w3-border"
-              type="text"
-              placeholder="Message"
-              required
-              name="Message"
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">Art Director</p>
+              <p>more about him....</p>
+              <p>mike@example.com</p>
+              <!-- <p><button class="button">Contact</button></p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end about section -->
+
+    <!-- Container (Portfolio Section) -->
+    <div id="portfolio" class="container-fluid text-center bg-grey">
+      <h2>Portfolio</h2>
+      <br />
+      <h4>Area we cover in <b>India</b></h4>
+      <div class="row text-center slideanim">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
+              alt="rajsthan"
+              width="400"
+              height="300"
             />
-          </p>
-          <p>
-            <button class="w3-button w3-black w3-padding-large" type="submit">
-              SEND MESSAGE
-            </button>
-          </p>
-        </form>
+            <p><strong>Rajsthan</strong></p>
+            <p>Cover Rajsthan's all area</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
+              alt="chhattisgarh"
+              width="400"
+              height="300"
+            />
+            <p><strong>chhattisgarh</strong></p>
+            <p>not all area's coverd in chhattisgarh</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
+              alt="Uttar Pradesh"
+              width="400"
+              height="300"
+            />
+            <p><strong>Uttar Pradesh</strong></p>
+            <p>Uttar Pradesh area coverd</p>
+          </div>
+        </div>
       </div>
 
-      <!-- End page content -->
+      <div class="row text-center slideanim">
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
+              alt="rajsthan"
+              width="400"
+              height="300"
+            />
+            <p><strong>Rajsthan</strong></p>
+            <p>Cover Rajsthan's all area</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
+              alt="chhattisgarh"
+              width="400"
+              height="300"
+            />
+            <p><strong>chhattisgarh</strong></p>
+            <p>not all area's coverd in chhattisgarh</p>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="thumbnail">
+            <img
+              src="https://ihplb.b-cdn.net/wp-content/uploads/2011/02/Forts.jpg"
+              alt="Uttar Pradesh"
+              width="400"
+              height="300"
+            />
+            <p><strong>Uttar Pradesh</strong></p>
+            <p>Uttar Pradesh area coverd</p>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <!-- Footer -->
-    <footer class="w3-container w3-center w3-opacity w3-margin-bottom">
-      <h5>Find Us On</h5>
-      <div class="w3-xlarge w3-padding-16">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <!-- Container (Pricing Section) -->
+    <div id="pricing" class="container-fluid">
+      <div class="text-center">
+        <h2>City-Movers-Bhopal price list</h2>
+        <h4>We have different plan types And all will apply from Bhopal</h4>
+        <p>Price will apply From <b>Bhopal</b> to destination in <b>KM</b></p>
       </div>
+      <div class="row slideanim">
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Basic</h1>
+              <p>Will be applied under 300 km</p>
+            </div>
+            <div class="panel-body">
+              <p><strong>200</strong> KM</p>
+              <p><strong>2</strong> transport</p>
+              <p><strong>5</strong> labors</p>
+            </div>
+            <div class="panel-footer">
+              <h3>$19</h3>
+              <h4>Per hour</h4>
+              <button class="btn btn-lg">Ready to take</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Pro</h1>
+              <p>WIll be applied after 1000 KM</p>
+            </div>
+            <div class="panel-body">
+              <p><strong>50</strong> Lorem</p>
+              <p><strong>25</strong> Ipsum</p>
+              <p><strong>10</strong> Dolor</p>
+            </div>
+            <div class="panel-footer">
+              <h3>$29</h3>
+              <h4>per hour</h4>
+              <button class="btn btn-lg">ready to take</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4 col-xs-12">
+          <div class="panel panel-default text-center">
+            <div class="panel-heading">
+              <h1>Premium</h1>
+              <p>Will be applied for foreign countries</p>
+            </div>
+            <div class="panel-body">
+              <!-- <p><strong>100</strong> Lorem</p>
+              <p><strong>50</strong> Ipsum</p>
+              <p><strong>25</strong> Dolor</p>
+              <p><strong>10</strong> Sit</p>
+              <p><strong>Endless</strong> Amet</p> -->
+              <h1>Comming Soon</h1>
+              <p>please contact us For more details</p>
+            </div>
+            <div class="panel-footer">
+              <h3>$0</h3>
+              <h4>per month</h4>
+              <button class="btn btn-lg">Ready to take</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div id="contact" class="container-fluid bg-grey">
+      <h2 class="text-center">CONTACT</h2>
+      <div class="row">
+        <div class="col-sm-5">
+          <p>Contact us and we'll get back to you within 3 year.</p>
+          <p>
+            <span class="glyphicon glyphicon-map-marker"></span> Bhoapl, India
+          </p>
+          <p><span class="glyphicon glyphicon-phone"></span> +91 7868511455</p>
+          <p>
+            <span class="glyphicon glyphicon-envelope"></span>
+            citymoversbhopal@gmail.com
+          </p>
+        </div>
+        <div class="col-sm-7 slideanim">
+          <div class="row">
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Name"
+                type="text"
+                required
+              />
+            </div>
+            <div class="col-sm-6 form-group">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+            </div>
+          </div>
+          <textarea
+            class="form-control"
+            id="comments"
+            name="comments"
+            placeholder="Comment"
+            rows="5"
+          ></textarea
+          ><br />
+          <div class="row">
+            <div class="col-sm-12 form-group">
+              <button class="btn btn-default pull-right" type="submit">
+                Send
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
       <p>
-        Powered by
-        <a
-          href="https://www.w3schools.com/w3css/default.asp"
-          target="_blank"
-          class="w3-hover-text-green"
-          >w3.css</a
+        all rights has taken
+        <a href="https://www.citymoverbhopal.com" title="citymoverbhopal"
+          >www.citymoverbhopal.com</a
         >
       </p>
     </footer>
-
-    <script>
-      // Tabs
-      function openLink(evt, linkName) {
-        var i, x, tablinks;
-        x = document.getElementsByClassName("myLink");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        tablinks = document.getElementsByClassName("tablink");
-        for (i = 0; i < x.length; i++) {
-          tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
-        }
-        document.getElementById(linkName).style.display = "block";
-        evt.currentTarget.className += " w3-red";
-      }
-
-      // Click on the first tablink on load
-      document.getElementsByClassName("tablink")[0].click();
-    </script>
   </body>
 </html>
